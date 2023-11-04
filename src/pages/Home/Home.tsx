@@ -1,26 +1,17 @@
 import { Button, Typography } from "@mui/material";
-import React from "react";
 import { styled } from '@mui/system';
-import heroImage from '../../assets/hero.jpg'
-
+import { useTranslation } from "react-i18next";
 
 const Home = () => {
+  const {t} = useTranslation();
   return (
-    <div>
-      <StyledDiv>
-        <Typography variant="h1">
-          Base Fit
-        </Typography>
-        {/* <h1>Base Fit</h1> */}
-        <h2>Where Fitness Becomes Your Lifestyle</h2>
-        <Button>Book Now</Button>
-      </StyledDiv>
-      <div>
-        <img src={heroImage} alt="pushup" />
-        <img src={heroImage} alt="pushup" />
-        <img src={heroImage} alt="pushup" />
+    <StyledDiv>
+      <div style={{color: 'var(--white)'}}>
+        <p>{t('Hero.Title')}</p>
+        <h1>{t('Hero.Content')}</h1>
+        <Button>{t('Hero.ActionLabel')}</Button>
       </div>
-    </div>
+    </StyledDiv>
   )
 }
 
@@ -30,6 +21,6 @@ const StyledDiv = styled('div')({
   backgroundAttachment: 'fixed',
   backgroundSize: 'cover',
   height: "90vh",
-})
+});
 
 export default Home;
