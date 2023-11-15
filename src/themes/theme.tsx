@@ -28,6 +28,9 @@ const theme = createTheme({
     background: {
       default: lightModeColors.background,
     },
+    primary: {
+      main: colors.primaryColor,
+    },
   },
   typography: {
     fontFamily: 'var(--my-font-family)',
@@ -40,7 +43,9 @@ const theme = createTheme({
     h3: {
       fontSize: 'var(--h3-size)',
     },
-    
+    button: {
+      textTransform: 'none',
+    },
   },
   components: {
     MuiAppBar: {
@@ -52,6 +57,21 @@ const theme = createTheme({
         },
       },
     },
+    MuiButton: {
+      styleOverrides: {
+        root: {
+          '&.MuiButton-sizeSmall': {
+            padding: '0.5rem 2rem',
+          },
+          '&.MuiButton-sizeMedium': {
+            padding: '0.75rem 2.25rem',
+          },
+          '&.MuiButton-sizeLarge': {
+            padding: '1rem 3.5rem',
+          },
+        },
+      },
+    }
   },
 });
 

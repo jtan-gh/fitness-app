@@ -1,13 +1,20 @@
 import i18n from 'i18next'
-import homeTranslations from '../assets/en/combinedTranslation';
+import { initReactI18next } from 'react-i18next';
+import homeTranslationsEN from '../assets//locales/en/combinedTranslation';
+import homeTranslationsFR from '../assets/locales/fr/combinedTranslation';
 
-i18n.init({
-  resources: {
-    en: { translation: homeTranslations},
-    fr: { translation: homeTranslations}
-  },
+const resources = {
+  en: { translation: homeTranslationsEN},
+  fr: { translation: homeTranslationsFR},
+}
+
+i18n.use(initReactI18next).init({
+  resources,
   lng: 'en',
-  // Other i18n configurations...
+
+  interpolation: {
+    escapeValue: false
+  }
 });
 
 export default i18n;

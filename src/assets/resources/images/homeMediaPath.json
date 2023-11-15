@@ -1,0 +1,22 @@
+{
+  "HomeSections": {
+    "0": {
+      "Image": "/assets/HomeImage0.jpg"
+    },
+    "1": {
+      "Video": "/assets/HomeVideo1.mp4"
+    },
+    "2": {
+      "Image": "/assets/HomeImage2.jpg"
+    },
+    "3": {
+      "Image": ""
+    },
+    "4": {
+      "Image": "/assets/HomeImage4.jpg"
+    },
+    "5": {
+      "Image": "/assets/HomeImage5.jpg"
+    }
+  }
+}

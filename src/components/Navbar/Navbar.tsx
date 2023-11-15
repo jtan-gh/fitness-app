@@ -5,7 +5,6 @@ import {
   MenuItem,
   Toolbar,
   AppBar,
-  Typography,
 } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import { useTheme } from '@mui/material/styles';
@@ -24,28 +23,33 @@ const navigationItems: NavItem[] = [
   // Add more navigation items as needed
 ];
 
+const maxLength = navigationItems.reduce((max, item) => {
+  return item.label.length > max ? item.label.length : max;
+}, 0);
+
+const maxWidth = maxLength * 20;
+
 const ResponsiveOverflowMenu: React.FC = () => {
   const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
   const NavRef = useRef<HTMLDivElement>(null);
   const [primaryItems, setPrimaryItems] = useState<NavItem[]>(navigationItems); //init all
   const [overflowItems, setOverflowItems] = useState<NavItem[]>([]);
-  const theme = useTheme();
+
+  const updateNavigation = () => {
+    if (NavRef && NavRef.current) {
+      // Calculate the number of items to show in the primary menu
+      const maxItemsInPrimaryMenu = calculateMaxItems(window.innerWidth, maxWidth);
+
+      // Split the items into primary and overflow
+      const primary = navigationItems.slice(0, maxItemsInPrimaryMenu);
+      const overflow = navigationItems.slice(maxItemsInPrimaryMenu);
+
+      setPrimaryItems(primary);
+      setOverflowItems(overflow);
+    }
+  };
 
   useEffect(() => {
-    const updateNavigation = () => {
-      if(NavRef && NavRef.current){
-        // Calculate the number of items to show in the primary menu
-        const maxItemsInPrimaryMenu = calculateMaxItems(window.innerWidth);
-
-        // Split the items into primary and overflow
-        const primary = navigationItems.slice(0, maxItemsInPrimaryMenu);
-        const overflow = navigationItems.slice(maxItemsInPrimaryMenu);
-
-        setPrimaryItems(primary);
-        setOverflowItems(overflow);
-      }
-    };
-
     updateNavigation();
     window.addEventListener('resize', updateNavigation);
 
@@ -54,11 +58,9 @@ const ResponsiveOverflowMenu: React.FC = () => {
     };
   }, []);
 
-  const calculateMaxItems = (width: number) => {
+  const calculateMaxItems = (width: number, widestEle: number) => {
     // Determine the max items based on the available width
-    const minWidthPerButton = 100; // Adjust as needed
-    const maxItems = Math.floor(width / minWidthPerButton);
-
+    const maxItems = Math.floor(width / widestEle);
     return maxItems;
   };
 
