@@ -1,0 +1,15 @@
+{
+    "Email Subscription": {
+        "Title" : "Don't miss updates from us!",
+        "Content" : "Keep up with our latest news and events. Subscribe to our newsletter.",
+        "Email" : "Email",
+        "ButtonLabel" : "Subscribe"
+    },
+    "Media": {
+        "Title" : "Stay Connected",
+        "Facebook" : "Like us On Facebook",
+        "Instagram" : "Follow us On Instagram",
+        "Youtube" : "Subscribe to our Youtube Channel"
+    }
+}
+  

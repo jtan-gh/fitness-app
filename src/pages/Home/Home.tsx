@@ -1,11 +1,10 @@
-import { Button, Typography } from "@mui/material"
+import { useTheme } from '@mui/material/styles';
+import { Button, Stack, Theme } from "@mui/material"
 import { styled } from '@mui/system'
 import media from '../../assets/resources/images/homeMediaPath.json'
 
-
 import { useTranslation } from "react-i18next";
-import { Hero, SplitScreen, LanguageSwitch, FullScreen, Parallax } from "../../components";
-
+import { Hero, SplitScreen, LanguageSwitch, FullScreen } from "../../components";
 
 interface Translation {
   Title: string,
@@ -14,9 +13,9 @@ interface Translation {
 }
 
 const Home = () => {
-  const { t } = useTranslation();
+  const theme = useTheme()
+  const { t } = useTranslation()
   const translations = Object.values(t("HomeSections", { returnObjects: true }) as Record<string, Translation>)
-  console.log(Object.values(t("HomeSections", { returnObjects: true })))
   const mediaUrl = media.HomeSections
 
   return (
@@ -34,7 +33,7 @@ const Home = () => {
           </Wrapper>
         }
         component2={
-          <ImgWrapper imgPath={mediaUrl[0].Image} reverse={true} />
+          <Stack sx={ImgWrapper({ imgPath: mediaUrl[0].Image, reverse: true, theme })} />
         }
       />
 
@@ -48,9 +47,9 @@ const Home = () => {
           </Wrapper>
         }
         component2={
-          <video style={{ objectFit: "fill" }} width="100%" height="100%" loop autoPlay muted>
+          <Video loop autoPlay muted>
             <source src={mediaUrl[1].Video} type="video/mp4" />
-          </video>
+          </Video>
         }
       />
 
@@ -64,7 +63,7 @@ const Home = () => {
           </Wrapper>
         }
         component2={
-          <ImgWrapper imgPath={mediaUrl[2].Image} reverse={true} />
+          <Stack sx={ParallaxWrapper({ imgPath: mediaUrl[2].Image, reverse: true, theme })} />
         }
       />
 
@@ -78,7 +77,7 @@ const Home = () => {
         </Wrapper>
       }
         component2={
-          <ImgWrapper imgPath={mediaUrl[4].Image} reverse={false} />
+          <Stack sx={ImgWrapper({ imgPath: mediaUrl[4].Image, reverse: false, theme })} />
         }
       />
 
@@ -90,34 +89,86 @@ const Home = () => {
         </Wrapper>
       }
         component2={
-          <ImgWrapper imgPath={mediaUrl[5].Image} reverse={true} />
+          <Stack sx={ParallaxWrapper({ imgPath: mediaUrl[5].Image, reverse: true, theme })} />
         }
       />
     </>
   )
 }
 
-const Wrapper = styled("div")({
+const Wrapper = styled("div")(({ theme }) => ({
   display: 'flex',
   flexDirection: 'column',
   gap: '2rem',
   alignItems: 'flex-start',
-})
+
+  [theme.breakpoints.up('sm')]: {
+    padding: '1rem',
+  },
+
+}))
 
 const Content = styled("p")({
   maxWidth: '30rem',
 })
 
-const ImgWrapper = styled("div")<{ imgPath: string, reverse: boolean }>(
-  ({ imgPath, reverse }) => ({
-    width: '100%',
-    height: '100%',
-    background: `url(${imgPath}) no-repeat`,
-    backgroundSize: 'contain',
+const Video = styled("video")({
+  objectFit: "fill",
+  width: '100%',
+  height: '100%',
+})
+
+const ImgWrapper = ({
+  imgPath,
+  reverse,
+  theme,
+}: {
+  imgPath: string,
+  reverse: boolean,
+  theme: Theme
+}) => ({
+  width: '100%',
+  height: '100%',
+  background: `url(${imgPath}) no-repeat`,
+  backgroundSize: 'cover',
+  backgroundPosition: reverse ? 'inherit' : 'right',
+
+  [theme.breakpoints.down('lg')]: {
+    backgroundSize: 'cover',
+    backgroundAttachment : 'unset',
+  },
+
+  [theme.breakpoints.down('sm')]: {
+    backgroundSize: 'cover',
     backgroundAttachment: 'fixed',
-    backgroundPosition: reverse ? 'inherit' : 'right',
-    overflow: 'hidden',
-  })
-);
+    backgroundPosition: 'right 0',
+  },
+})
+
+const ParallaxWrapper = ({
+  imgPath,
+  reverse,
+  theme,
+}: {
+  imgPath: string,
+  reverse: boolean,
+  theme: Theme
+}) => ({
+  width: '100%',
+  height: '100%',
+  background: `url(${imgPath}) no-repeat`,
+  backgroundSize: 'cover',
+  backgroundAttachment: 'fixed',
+  backgroundPosition: reverse ? 'inherit' : 'right',
+
+  [theme.breakpoints.down('lg')]: {
+    backgroundSize: 'cover',
+    backgroundAttachment : 'unset',
+  },
+  [theme.breakpoints.down('sm')]: {
+    backgroundSize: 'cover',
+    // backgroundAttachment: 'fixed',
+  },
+})
 
 export default Home;

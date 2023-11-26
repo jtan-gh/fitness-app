@@ -5,19 +5,29 @@
   --h3-size: 2rem;
   --h4-size: 1.5rem;
   --body-size: 1.2rem;
-  --white: #F0F0F0;
+  
   --primaryColor: #5E3AD4;
   --accentColor: #9A89B4;
   --backgroundShade: #FCF7FF;
   --textShade: #22115a;
   --neutralBlack: #222222;
   --neutralWhite: #F0F0F0;
-  @media only screen and (max-width: 768px){
+
+  --bp-xs: 480px;
+  --bp-sm: 768px;
+  --bp-md: 1024px;
+  --bp-lg: 1200px;
+  --bp-xl: 1920px;
+
+  @media only screen and (max-width: var(--bp-s)){
   --h1-size: 3rem;
   --h2-size: 2.25rem;
   --h3-size: 1.75rem;
   --h4-size: 1.25rem;
   }
+  @custom-media --small-device (max-width: var(--bp-sm));
+  @custom-media --medium-device (max-width: var(--bp-md));
+
 }
 
 html {

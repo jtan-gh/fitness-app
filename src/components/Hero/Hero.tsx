@@ -35,7 +35,7 @@ const CenterContent = styled('div')({
   flexDirection: 'column',
   alignItems: 'start',
   '& h1, & h2': {
-    color: 'var(--white)',
+    color: 'var(--neutralWhite)',
   },
 });
 

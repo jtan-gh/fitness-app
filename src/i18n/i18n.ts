@@ -1,11 +1,11 @@
 import i18n from 'i18next'
 import { initReactI18next } from 'react-i18next';
-import homeTranslationsEN from '../assets//locales/en/combinedTranslation';
-import homeTranslationsFR from '../assets/locales/fr/combinedTranslation';
+import TranslationsEN from '../assets/locales/en/TranslationsEN';
+import TranslationsFR from '../assets/locales/fr/combinedTranslation';
 
 const resources = {
-  en: { translation: homeTranslationsEN},
-  fr: { translation: homeTranslationsFR},
+  en: { translation: TranslationsEN},
+  fr: { translation: TranslationsFR},
 }
 
 i18n.use(initReactI18next).init({
