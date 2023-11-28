@@ -1,29 +1,28 @@
 {
   "HomeSections": {
     "0": {
-      "Title": "FRFRFR",
-      "Content": "FRFRFR",
-      "ActionLabel": "FRFRFR"
+      "Title": "À propos de Studio de Fitness Extrême",
+      "Content": "Extreme Fitness Studio, où la passion rencontre la performance et où le dévouement façonne le destin. Nous ne sommes pas seulement une salle de sport, nous sommes une communauté engagée à repousser les limites, à inspirer le changement et à libérer votre potentiel ultime."
     },
     "1": {
-      "Title": "FRFRFR",
-      "Content": "FRFRFR" ,
-      "ActionLabel": "FRFRFR"
+      "Title": "Notre mission",
+      "Content": "Chez Extreme Fitness Studio, notre mission est de redéfinir votre expérience de remise en forme. Nous croyons en la promotion d’un environnement dans lequel chaque individu, quel que soit son niveau de forme physique, peut s’épanouir. Notre équipe dévouée de formateurs expérimentés et nos installations de pointe sont là pour vous soutenir dans votre cheminement vers une personne plus saine, plus forte et plus confiante." ,
+      "ActionLabel": "Adhérer maintenant"
     },
     "2": {
-      "Title": "What Sets Us Apart",
-      "Content": "We stand out by offering a dynamic range of fitness programs tailored to cater to diverse goals. From high-intensity workouts to specialized classes and personalized training sessions, we're here to challenge you, motivate you, and celebrate your progress."
+      "Title": "Ce qui nous distingue",
+      "Content": "Nous nous démarquons en proposant une gamme dynamique de programmes de remise en forme adaptés à divers objectifs. Des entraînements de haute intensité aux cours spécialisés et aux séances d'entraînement personnalisées, nous sommes là pour vous mettre au défi, vous motiver et célébrer vos progrès."
     },
     "3": {
-      "Title": "Join Extreme and Transform Your Body and Mind"
+      "Title": "Rejoignez Extreme pour transformer votre corps et votre esprit"
     },
     "4": {
-      "Title": "Community",
-      "Content": "We're a thriving collective of passionate individuals dedicated to supporting each other in their fitness journeys. Our inclusive and vibrant community fosters connections, shares successes, and celebrates progress together."
+      "Title": "Communauté",
+      "Content": "Nous sommes un collectif prospère d'individus passionnés qui se consacrent à se soutenir mutuellement dans leur parcours de remise en forme. Notre communauté inclusive et dynamique favorise les liens, partage les réussites et célèbre les progrès ensemble."
     },
     "5": {
-      "Title": "Results",
-      "Content": "Our expert trainers, personalized programs, and supportive community are here to propel you towards your fitness goals. Whether you're striving for weight loss, strength building, or overall wellness, our tailored approach ensures results. Join us to witness not just physical changes but a newfound confidence, energy, and a healthier lifestyle."
+      "Title": "Résultats",
+      "Content": "Nos entraîneurs experts, nos programmes personnalisés et notre communauté de soutien sont là pour vous propulser vers vos objectifs de remise en forme. Que vous cherchiez à perdre du poids, à développer votre force ou à vous sentir mieux en général, notre approche sur mesure garantit des résultats. Rejoignez-nous pour être témoin non seulement d'activités physiques. des changements mais une confiance, une énergie et un mode de vie plus sains retrouvés."
     }
   }
 }

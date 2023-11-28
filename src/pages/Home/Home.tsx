@@ -167,7 +167,6 @@ const ParallaxWrapper = ({
   },
   [theme.breakpoints.down('sm')]: {
     backgroundSize: 'cover',
-    // backgroundAttachment: 'fixed',
   },
 })
 

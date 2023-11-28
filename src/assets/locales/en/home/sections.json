@@ -2,13 +2,12 @@
   "HomeSections": {
     "0": {
       "Title": "About Extreme Fitness Studio",
-      "Content": "Extreme Fitness Studio, where passion meets performance, and dedication shapes destiny. We're not just a gym, we're a community committed to pushing boundaries, inspiring change, and unlocking your ultimate potential.",
-      "ActionLabel": "Read More"
+      "Content": "Extreme Fitness Studio, where passion meets performance, and dedication shapes destiny. We're not just a gym, we're a community committed to pushing boundaries, inspiring change, and unlocking your ultimate potential."
     },
     "1": {
       "Title": "Our Mission",
       "Content": "At Extreme Fitness Studio, our mission is to redefine your fitness experience. We believe in fostering an environment where every individual, irrespective of their fitness level, can thrive. Our dedicated team of experienced trainers and state-of-the-art facilities are here to support you on your journey to a healthier, stronger, and more confident you." ,
-      "ActionLabel": "Book Now"
+      "ActionLabel": "Join Now"
     },
     "2": {
       "Title": "What Sets Us Apart",
