@@ -5,6 +5,7 @@ import media from '../../assets/resources/images/homeMediaPath.json'
 
 import { useTranslation } from "react-i18next";
 import { Hero, SplitScreen, FullScreen } from "../../components";
+import { useNavigate } from 'react-router-dom';
 
 interface Translation {
   Title: string,
@@ -15,6 +16,7 @@ interface Translation {
 const Home = () => {
   const theme = useTheme()
   const { t } = useTranslation()
+  const navigate = useNavigate();
   const translations = Object.values(t("HomeSections", { returnObjects: true }) as Record<string, Translation>)
   const mediaUrl = media.HomeSections
 
@@ -42,7 +44,7 @@ const Home = () => {
           <Wrapper>
             <h2>{translations[1]["Title"]}</h2>
             {translations[1]["Content"] && <Content>{translations[1]["Content"]}</Content>}
-            {translations[1]["ActionLabel"] && <Button size="medium" variant="contained">{translations[1]["ActionLabel"]}</Button>}
+            {translations[1]["ActionLabel"] && <Button size="medium" variant="contained" onClick={() => navigate('/classes')}>{translations[1]["ActionLabel"]}</Button>}
           </Wrapper>
         }
         component2={
