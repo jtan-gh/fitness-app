@@ -1,15 +1,19 @@
 {
-    "Email Subscription": {
-        "Title" : "Ne manquez pas nos mises à jour!",
-        "Content" : "Tenez-vous au courant de nos dernières nouvelles et événements. Abonnez-vous à notre newsletter.",
-        "Email" : "Courrier électronique",
-        "ButtonLabel" : "S'abonner"
-    },
-    "Media": {
-        "Title" : "Rester connecté",
-        "Facebook" : "Aimez-nous sur Facebook",
-        "Instagram" : "Follow us On Instagram",
-        "Youtube" : "Abonnez-vous à notre chaîne Youtube"
-    }
+  "Contact": {
+    "Location": "123 Fitness Ave, Vancouver, BC, Canada V6G 1A1",
+    "Phone": "111-111-1111",
+    "Email": "extreme.email@gmail.com"
+  },
+  "Email Subscription": {
+    "Title": "Ne manquez pas nos mises à jour!",
+    "Content": "Tenez-vous au courant de nos dernières nouvelles et événements. Abonnez-vous à notre newsletter.",
+    "Email": "Courrier électronique",
+    "ButtonLabel": "S'abonner"
+  },
+  "Media": {
+    "Title": "Rester connecté",
+    "Facebook": "Aimez-nous sur Facebook",
+    "Instagram": "Follow us On Instagram",
+    "Youtube": "Abonnez-vous à notre chaîne Youtube"
+  }
 }
-  

@@ -1,0 +1,46 @@
+{
+  "aboutUs": {
+    "title": "À propos de nous",
+    "summary": "Extreme Fitness Studio s'engage à offrir un environnement accueillant et axé sur les résultats pour les personnes de tous niveaux de forme physique. Notre mission est de permettre à nos membres d'atteindre leurs objectifs grâce à des conseils d'experts, des programmes d'entraînement variés et un fort esprit de communauté. Que vous commenciez votre parcours de remise en forme ou cherchiez à dépasser un plateau, nous sommes là pour vous soutenir et vous mettre au défi à chaque étape."
+  },
+  "trainers": {
+    "title": "Rencontrez nos entraîneurs",
+    "list": [
+      {
+        "name": "Jaxon Ramirez",
+        "specialty": "Entraînement fractionné de haute intensité (HIIT)",
+        "greeting": "Ici, pas de raccourcis—juste de l’intensité, de la sueur et des résultats. Venez, travaillez dur, et je m'assurerai que vous repartiez plus fort qu’à votre arrivée."
+      },
+      {
+        "name": "Leah Chen",
+        "specialty": "Yoga et souplesse",
+        "greeting": "Équilibre, respiration et force—mes séances vous aident à vous reconnecter à votre corps et à découvrir le pouvoir de ralentir avec intention."
+      },
+      {
+        "name": "Marcus Oduro",
+        "specialty": "Force et powerlifting",
+        "greeting": "Nous construisons la force depuis la base. Avec le bon état d’esprit et la bonne technique, vous soulèverez plus lourd et vous vous sentirez plus puissant que jamais."
+      },
+      {
+        "name": "Sophie Bennett",
+        "specialty": "Vélo stationnaire et endurance",
+        "greeting": "L’endurance se mérite, elle ne se donne pas. Chaque séance est un défi, mais je vous garderai motivé et en mouvement jusqu’à ce que vous atteigniez tous vos objectifs."
+      },
+      {
+        "name": "Darius Lee",
+        "specialty": "Entraînement fonctionnel et force du tronc",
+        "greeting": "Un tronc solide, ce n’est pas que des abdos—c’est votre fondation. Entraînons-nous intelligemment, bougeons mieux, et construisons une vraie force qui dure au-delà de la salle."
+      },
+      {
+        "name": "Amira Khalil",
+        "specialty": "Mobilité, récupération et respiration",
+        "greeting": "La récupération n’est pas facultative—elle est essentielle. Je vous aiderai à vous réinitialiser, vous réaligner et éviter les blessures pour vous entraîner régulièrement et donner le meilleur de vous-même."
+      },
+      {
+        "name": "Tyler Nguyen",
+        "specialty": "Technologie du fitness et analyse de performance",
+        "greeting": "Je transforme vos données en progrès. Que ce soit des objets connectés ou des métriques, je vous guiderai avec des insights intelligents pour vous entraîner efficacement et repousser vos limites."
+      }
+    ]
+  }
+}

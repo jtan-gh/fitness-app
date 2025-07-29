@@ -1,8 +1,24 @@
 {
-    "Contact": {
-        "Title": "Coordonnées",
-        "Location": "4278 Eagle Rd, Toronto, ON, M8Z 4H4,",
-        "Phone" : "416-233-2769",
-        "Email": "extreme_fitness@gmail.com"
-    }
+  "contact": {
+    "mapTitle": "Carte Google",
+    "visitUs": "Venez nous voir",
+    "address": "123 Fitness Ave, Vancouver, BC, Canada V6G 1A1",
+    "businessHoursTitle": "Heures d'ouverture",
+    "hours": {
+      "monday": "Lundi : 6h00 – 21h00",
+      "tuesday": "Mardi : 6h00 – 21h00",
+      "wednesday": "Mercredi : 6h00 – 21h00",
+      "thursday": "Jeudi : 6h00 – 21h00",
+      "friday": "Vendredi : 6h00 – 20h00",
+      "saturday": "Samedi : 8h00 – 18h00",
+      "sunday": "Dimanche : 8h00 – 16h00"
+    },
+    "contactUs": "Nous contacter",
+    "yourEmail": "Votre courriel",
+    "yourQuestion": "Votre question",
+    "send": "Envoyer",
+    "referTitle": "Parrainez un ami",
+    "referDescription": "Invitez vos amis et recevez des récompenses exclusives pour chaque inscription !",
+    "referButton": "Parrainer maintenant"
+  }
 }

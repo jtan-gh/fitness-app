@@ -1,0 +1,46 @@
+{
+  "aboutUs": {
+    "title": "Who We Are",
+    "summary": "Extreme Fitness Studio is committed to providing a welcoming and results-driven environment for individuals of all fitness levels. Our mission is to empower members to reach their goals through expert guidance, diverse training programs, and a strong sense of community. Whether you're starting your fitness journey or looking to push past a plateau, we’re here to support and challenge you every step of the way."
+  },
+  "trainers": {
+    "title": "Meet Our Trainers",
+    "list": [
+      {
+        "name": "Jaxon Ramirez",
+        "specialty": "High-Intensity Interval Training (HIIT)",
+        "greeting": "You won’t find shortcuts here—just intensity, sweat, and results. Show up, work hard, and I’ll make sure you leave stronger than you came in."
+      },
+      {
+        "name": "Leah Chen",
+        "specialty": "Yoga & Flexibility",
+        "greeting": "Balance, breath, and strength—my sessions help you reconnect with your body and discover the power that comes from slowing things down with purpose."
+      },
+      {
+        "name": "Marcus Oduro",
+        "specialty": "Strength & Powerlifting",
+        "greeting": "We build strength from the ground up. With the right mindset and technique, you'll lift heavier and feel more powerful than ever before."
+      },
+      {
+        "name": "Sophie Bennett",
+        "specialty": "Spin & Endurance",
+        "greeting": "Endurance is earned, not given. Every ride is a challenge, but I’ll keep you motivated and moving until you crush every goal you set."
+      },
+      {
+        "name": "Darius Lee",
+        "specialty": "Functional Training & Core Strength",
+        "greeting": "A strong core isn’t just about abs—it’s your foundation. Let’s train smart, move better, and build real strength that lasts beyond the gym."
+      },
+      {
+        "name": "Amira Khalil",
+        "specialty": "Mobility, Recovery & Breathwork",
+        "greeting": "Recovery isn’t optional—it’s essential. I’ll help you reset, realign, and stay injury-free so you can train consistently and perform your best."
+      },
+      {
+        "name": "Mike Tyler",
+        "specialty": "Fitness Tech & Performance Analytics",
+        "greeting": "I turn your data into progress. Whether it’s wearables or metrics, I’ll guide you with smart insights to train efficiently and push your limits."
+      }
+    ]
+  }
+}

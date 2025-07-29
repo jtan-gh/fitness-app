@@ -8,6 +8,7 @@ import {
 } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import { useTheme } from '@mui/material/styles';
+import LanguageSwitch from '../Switch/LanguageSwitch';
 
 interface NavItem {
   label: string;
@@ -16,9 +17,9 @@ interface NavItem {
 
 const navigationItems: NavItem[] = [
   { label: 'Home', link: '/' },
-  { label: 'About', link: '/about' },
-  { label: 'Services', link: '/services' },
-  { label: 'Portfolio', link: '/portfolio' },
+  { label: 'Classes', link: '/classes' },
+  { label: 'Our Team', link: '/about' },
+  // { label: 'Portfolio', link: '/portfolio' },
   { label: 'Contact', link: '/contact' },
   // Add more navigation items as needed
 ];
@@ -75,6 +76,7 @@ const ResponsiveOverflowMenu: React.FC = () => {
   return (
     <div>
       <AppBar position="static">
+        <LanguageSwitch />
         <Toolbar>
           <div ref={NavRef} style={{ display: 'flex' }}>
             {primaryItems.map((item) => (

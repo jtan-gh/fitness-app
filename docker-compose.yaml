@@ -1,0 +1,10 @@
+version: '3.9'
+
+services:
+  react-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: jtandockerhub/react-test-app:v1.0.0
+    ports:
+      - "3000:3000"

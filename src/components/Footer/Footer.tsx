@@ -35,9 +35,15 @@ const Footer = () => {
       <Section>
         <h3>{t("Email Subscription.Title")}</h3>
         <p>{t("Email Subscription.Content")}</p>
-        <div style={{ display: 'flex', flexDirection: 'row', gap: '1rem' }}>
-          <p>{t("Email Subscription.Email")}</p>
-          <EmailSubscribeForm />
+        <div style={{ display: 'flex', flexDirection: 'row', gap: '1rem', alignItems: 'center'}}>
+          <ul>
+            <li>
+              <p>{t("Email Subscription.Email")}</p>
+            </li>
+            <li>
+              <EmailSubscribeForm />
+            </li>
+          </ul>
         </div>
       </Section>
       <Section>
@@ -78,7 +84,12 @@ const Wrapper = styled('div')(({ theme }) => ({
   backgroundColor: "rgb(129, 36, 148)",
 
   "& h1, & h2, & h3, & h4, & h5, & h6, & p, & ul": {
-    color: 'var(--neutralWhite)',
+    color: theme.palette.background.default,
+  },
+  "p": {
+    margin: 0,
+    padding: 0,
+    linHeight: '1.5rem',
   },
   "ul": {
     padding: 0,

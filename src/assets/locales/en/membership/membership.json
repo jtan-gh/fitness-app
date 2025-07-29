@@ -1,0 +1,43 @@
+{
+  "membership": {
+    "sectionTitle": "Membership Plans",
+    "plans": [
+      {
+        "name": "Basic",
+        "price": "$29/mo",
+        "features": ["Access to gym floor", "Group classes"]
+      },
+      {
+        "name": "Premium",
+        "price": "$49/mo",
+        "features": ["All basic features", "1 PT session", "Nutrition plan"]
+      },
+      {
+        "name": "Elite",
+        "price": "$79/mo",
+        "features": ["All premium features", "Unlimited classes", "VIP events"]
+      }
+    ],
+    "choosePlan": "Choose Plan",
+    "coursesTitle": "Individual Courses",
+    "courses": [
+      {
+        "title": "Yoga Fundamentals",
+        "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuAzohYMbYCqnzQjbid_33wb4qclYF4L8ZUi3XZlOzCMLoNcHbo5vLBi7wyjeYifyM_UoJ7RTO4yCg2uLsydIWVzar6H-KinWX38DpOiEaV9pKlsnpMa_NCYzr1zLSOTJb8Y2Biah5QnDeJyWDlDN67O1ShDAaSU46S7FV0Wma-gs5EQPEBF67SAndWKCf27MJx60MP3Lk4skl1eqXSZwFaHjD_oTJIjXDCveGl9MXji3lYSm_auCCDJmhLI5Euoduw5bkfiDTh0t5Ly"
+      },
+      {
+        "title": "Strength Training",
+        "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuBWlwGoKH3TOVIPr562YMhhC4jGeQiiCFoLuqmWYtoW3z50G1un3Xq8ZvsBrUmaweMas7NePBuUKmPTIyZes-_j3M95Yt_m3DQBTI69WWtcKRgZ79apaf1E--_paZCUBP4xeTPE1zMCl9At68VAU2f48P4cHLkb_9g4dls6RsRAFcyDbwh9VlYFj_nj-uCf1Ofc0qsb1IeQJVeXk75nToXgnRcEw-FTMzNWCc3wk3thZwAuqqqvj4W85cr4E1RSlu7IzLyVOVLaRzeK"
+      },
+      {
+        "title": "Cardio Blast",
+        "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuCjdRhMGa_puNVfK5knhC5TlRzBjqiWCPASeY6n-calG5MOVp-d4axIGD-16hj8pyO09LO_QTua8WE0bMst2UTgvrMNEIzI1foAr-WEhz5NWI5UXduGp9ermnSB8EmpXJlUB87erBVLOrOugX9gf81PriZttLeME1e-esSq_r0xwXrNfvmCz8uLe2wfuyf40ls7H8a0O8EhehXE6eO3GI70rg6P_4VZdQO_5wLr-6ZfGzHAwySnm1T_yE1POQujG1hZtWd0IN0S5pSn"
+      },
+      {
+        "title": "Pilates Core",
+        "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuDyH7_6YdrUCgbnvhy5Z-YzSJKOKA0W6tUei3aY0p99eNMmusStNCX79-4P0OCB1UeaSgUssFnEhiKgbdVWezn7x-kaVbcMU5dES623aAIg5v_ukltNZT_gcyG6HIVmYTN9DmcIW0Iv1vccTfUkFZWvtsUBjRkmf-VhpP2kUzqagFLgtnRkKI-lgo9XiRDm-4t0y4R9Pe6RpUNZb7H0RerKkcRCUjtWwIhNlVEqvoFFAVEcNnUK1hwr-GqNsMSjK5SK_hf66vW9SoQV"
+      }
+    ],
+    "getQuote": "Get a Quote"
+  }
+}

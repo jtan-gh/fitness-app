@@ -5,7 +5,7 @@ import about from "./about/about.json";
 import contact from "./contact/contact.json";
 import footer from "./footer/footer.json";
 
-const enTranslations = {
+const frTranslations = {
   ...about,
   ...membership,
   ...contact,
@@ -13,4 +13,4 @@ const enTranslations = {
   ...home,
   ...homesection,
 };
-export default enTranslations;
+export default frTranslations;

@@ -1,4 +1,9 @@
 {
+    "Contact": {
+        "Location" : "123 Fitness Ave, Vancouver, BC, Canada V6G 1A1",
+        "Phone": "111-111-1111",
+        "Email" : "extreme.email@gmail.com"
+    }, 
     "Email Subscription": {
         "Title" : "Don't miss updates from us!",
         "Content" : "Keep up with our latest news and events. Subscribe to our newsletter.",

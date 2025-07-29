@@ -1,5 +1,5 @@
-import { Button } from "@mui/material";
-import { styled } from '@mui/system';
+import { Button, colors } from "@mui/material";
+import { styled, useTheme } from '@mui/material/styles';
 
 import { useTranslation } from "react-i18next";
 
@@ -9,7 +9,7 @@ const Hero = () => {
     <Wrapper>
       <CenterContent>
         <h1>{t('Hero.Title')}</h1>
-        <h2>{t('Hero.Content')}</h2>
+        <h4>{t('Hero.Content')}</h4>
         <Button size="large" variant="contained">{t('Hero.ActionLabel')}</Button>
       </CenterContent>
     </Wrapper>
@@ -28,15 +28,18 @@ const Wrapper = styled('div')({
   placeItems: 'center',
 });
 
-const CenterContent = styled('div')({
+const CenterContent = styled('div')(({ theme }) => ({
   padding: 'inherit',
   gap: '1rem',
   display: 'flex',
   flexDirection: 'column',
   alignItems: 'start',
-  '& h1, & h2': {
-    color: 'var(--neutralWhite)',
+  '& h1': {
+    color: theme.palette.primary.main,
   },
-});
+  '& h4': {
+    color: theme.customColors.neutralWhite,
+  },
+}));
 
 export default Hero;

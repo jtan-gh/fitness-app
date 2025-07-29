@@ -19,12 +19,11 @@ const EmailSubscribeForm = () => {
     <Wrapper>
       <TextField
         label="Enter email here"
-        variant="outlined"
         size='small'
         value={email}
         onChange={(e) => setEmail(e.target.value)}
       />
-      <Button onClick={handleSubscribe} variant='white' size='small'>PlaceHolder</Button>
+      <Button onClick={handleSubscribe} variant='white' size='small'>Register</Button>
     </Wrapper>
   );
 };
@@ -32,6 +31,10 @@ const EmailSubscribeForm = () => {
 const Wrapper = styled('div')({
   display: 'flex',
   gap: '1rem',
+
+  '.MuiInputBase-root' : {
+    padding: '0 !important',
+  }
 })
 
 export default EmailSubscribeForm;

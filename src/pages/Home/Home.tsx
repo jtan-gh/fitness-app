@@ -4,7 +4,7 @@ import { styled } from '@mui/system'
 import media from '../../assets/resources/images/homeMediaPath.json'
 
 import { useTranslation } from "react-i18next";
-import { Hero, SplitScreen, LanguageSwitch, FullScreen } from "../../components";
+import { Hero, SplitScreen, FullScreen } from "../../components";
 
 interface Translation {
   Title: string,
@@ -20,7 +20,6 @@ const Home = () => {
 
   return (
     <>
-      <LanguageSwitch />
       <Hero />
 
       <SplitScreen
