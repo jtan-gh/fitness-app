@@ -1,14 +1,8 @@
-import React, { useState, useEffect, useRef } from 'react';
-import {
-  Button,
-  Menu,
-  MenuItem,
-  Toolbar,
-  AppBar,
-} from '@mui/material';
-import MenuIcon from '@mui/icons-material/Menu';
-import { useTheme } from '@mui/material/styles';
-import LanguageSwitch from '../Switch/LanguageSwitch';
+import React, { useState, useEffect, useRef } from "react";
+import { Button, Menu, MenuItem, Toolbar, AppBar } from "@mui/material";
+import MenuIcon from "@mui/icons-material/Menu";
+import { useTheme } from "@mui/material/styles";
+import LanguageSwitch from "../Switch/LanguageSwitch";
 
 interface NavItem {
   label: string;
@@ -16,11 +10,11 @@ interface NavItem {
 }
 
 const navigationItems: NavItem[] = [
-  { label: 'Home', link: '/' },
-  { label: 'Classes', link: '/classes' },
-  { label: 'Our Team', link: '/about' },
+  { label: "Home", link: "/" },
+  { label: "Classes", link: "/classes" },
+  { label: "Our Team", link: "/about" },
   // { label: 'Portfolio', link: '/portfolio' },
-  { label: 'Contact', link: '/contact' },
+  { label: "Contact", link: "/contact" },
   // Add more navigation items as needed
 ];
 
@@ -39,7 +33,10 @@ const ResponsiveOverflowMenu: React.FC = () => {
   const updateNavigation = () => {
     if (NavRef && NavRef.current) {
       // Calculate the number of items to show in the primary menu
-      const maxItemsInPrimaryMenu = calculateMaxItems(window.innerWidth, maxWidth);
+      const maxItemsInPrimaryMenu = calculateMaxItems(
+        window.innerWidth,
+        maxWidth
+      );
 
       // Split the items into primary and overflow
       const primary = navigationItems.slice(0, maxItemsInPrimaryMenu);
@@ -52,10 +49,10 @@ const ResponsiveOverflowMenu: React.FC = () => {
 
   useEffect(() => {
     updateNavigation();
-    window.addEventListener('resize', updateNavigation);
+    window.addEventListener("resize", updateNavigation);
 
     return () => {
-      window.removeEventListener('resize', updateNavigation);
+      window.removeEventListener("resize", updateNavigation);
     };
   }, []);
 
@@ -78,7 +75,7 @@ const ResponsiveOverflowMenu: React.FC = () => {
       <AppBar position="static">
         <LanguageSwitch />
         <Toolbar>
-          <div ref={NavRef} style={{ display: 'flex' }}>
+          <div ref={NavRef} style={{ display: "flex" }}>
             {primaryItems.map((item) => (
               <Button
                 key={item.label}
@@ -86,11 +83,11 @@ const ResponsiveOverflowMenu: React.FC = () => {
                 component="a"
                 href={item.link}
                 style={{
-                  flex: '1 1 auto',
-                  whiteSpace: 'nowrap',
-                  minWidth: '100',
-                  textAlign: 'left',
-                  textOverflow: 'ellipsis',
+                  flex: "1 1 auto",
+                  whiteSpace: "nowrap",
+                  minWidth: "100",
+                  textAlign: "left",
+                  textOverflow: "ellipsis",
                 }}
               >
                 {item.label}
@@ -114,13 +111,17 @@ const ResponsiveOverflowMenu: React.FC = () => {
               onClose={handleClose}
             >
               {overflowItems.map((item) => (
-                <MenuItem key={item.label} onClick={handleClose}>
-                  {item.label}
+                <MenuItem
+                  key={item.label}
+                  onClick={handleClose}
+                >
+                  <Button component="a" href={item.link}>
+                    {item.label}
+                  </Button>
                 </MenuItem>
               ))}
             </Menu>
           </div>
-
         </Toolbar>
       </AppBar>
     </div>

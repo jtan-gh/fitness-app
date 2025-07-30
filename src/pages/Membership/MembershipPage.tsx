@@ -20,8 +20,6 @@ export default function MembershipPage() {
     }[];
   };
 
-  console.log(content)
-
   return (
     <Container>
       <Content>
